@@ -25,7 +25,7 @@ if (navigator.geolocation) {
 
 //leaflet which is being using through cdn
 //we can use it by simply typing capital L we will get suggestions and do the below things.     
-const map = L.map('map').setView([0, 0], 10);
+const map = L.map('map').setView([0, 0], 16);
 
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -36,13 +36,13 @@ const markers={};
 
 socket.on("receive-location", (data) => {
     const { id, latitude, longitude } = data;
-    map.setView([latitude, longitude], 16);
+    map.setView([latitude, longitude]);
 
     if (markers[id]) {
         markers[id].setLatLng([latitude, longitude]);
-    } else {
-        markers[id] = L.marker([latitude, longitude]).addTo(map)
-            .bindPopup(`User: ${id}`).openPopup();
+    } 
+    else {
+        markers[id] = L.marker([latitude, longitude]).addTo(map);
     }
 });
 socket.on("user-disconnected",(id)=>{
