@@ -8,7 +8,7 @@ Built with Node.js, Express.js, Socket.io, and Leaflet.js
 🧭 Overview
 The Live Tracker Application is a real-time location tracking web application that allows users to share and monitor live locations on an interactive map. It leverages the browser's Geolocation API and real-time communication via WebSockets to provide instantaneous location updates.
 
-![Join Room](Screenshot 2025-05-14 130247.png)
+![Join Room](demo1.png)
 🔧 Features
 Real-Time Location Sharing: Users can share their current location in real-time.
 
@@ -86,7 +86,7 @@ Live URL: https://live-tracker-application.onrender.com/
 
 📸 Screenshots
 
-![Join Room](Screenshot 2025-05-14 130345.png)
+![Join Room](Live2.png)
 Interactive map displaying real-time user locations.
 
 
