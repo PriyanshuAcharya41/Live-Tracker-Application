@@ -86,7 +86,7 @@ Live URL: https://live-tracker-application.onrender.com/
 
 📸 Screenshots
 
-![Join Room](Live2.png)
+![Join Room](live2.png)
 Interactive map displaying real-time user locations.
 
 
